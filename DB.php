@@ -5,7 +5,7 @@ class DB{
     public static function GetConnection(){
         try{
             if(empty(self::$connection)) {
-                $conn = new \PDO("mysql:host=191.243.143.162;dbname=veiocomb_loja", 'root', 'GiEf6K2113');
+                $conn = new \PDO("mysql:host=191.243.143.162;dbname=", '', '');
                 $conn->exec("set names utf8");
                 $conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
                 self::$connection = $conn;
